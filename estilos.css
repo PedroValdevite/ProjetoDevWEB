@@ -1,0 +1,75 @@
+/* Estilos globais e reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+}
+
+/* Layout principal com CSS Grid */
+header {
+    grid-row: 1;
+}
+
+main {
+    grid-row: 2;
+}
+
+footer {
+    grid-row: 3;
+}
+
+/* Estilização do cabeçalho com Flexbox */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; /* Adicionado padding para dar espaço */
+}
+
+.logo img {
+    height: 20vh;
+}
+
+.slogan-area span {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.user-area a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para o menu de navegação */
+nav ul {
+    display: flex; 
+    justify-content: center; /* Centraliza o menu */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    background: linear-gradient(to right, #59738B, #308A66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Mantém a cor transparente para o gradiente funcionar */
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px; /* Adicione padding para dar um "respiro" aos links */
+    text-decoration: none;
+}
+
+/* Estilos de hover para os links do menu */
+nav ul li a:hover {
+    background: linear-gradient(to right, #308A66, #59738B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
