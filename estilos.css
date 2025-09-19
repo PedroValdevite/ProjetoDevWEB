@@ -6,10 +6,11 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    background-color: #EEEEEE;
+    background-color: #f4f4f4;
 }
 
 /* Layout principal com CSS Grid */
@@ -72,4 +73,51 @@ nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+}
+
+.banner-section{
+    background: linear-gradient(to right, #59738B, #F8F6F8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-icon{
+    width: 12%;
+    height: 12%;
+    border-radius: 100%;
+}
+.banner-text{
+    width: 450px;
+    height: 350px;
+    padding-top: 6%;
+}
+.banner-text h1 {
+  font-size: 2.5em; /* Tamanho do título */
+  font-weight: 700; /* Negrito para o título */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+  line-height: 1.2; /* Altura da linha para melhor leitura */
+  color: #34495e; /* Um azul mais escuro para o título */
+}
+
+.banner-text p {
+  font-size: 1.1em; /* Tamanho do parágrafo */
+  font-weight: 400; /* Peso normal da fonte */
+  margin-bottom: 25px; /* Espaço abaixo do parágrafo */
+  line-height: 1.5;
+  color: #555; /* Um cinza mais suave para o parágrafo */
+}
+
+.btn-saiba-mais {
+  display: inline-block; /* Permite aplicar padding e margens */
+  background-color: #3498db; /* Azul do botão, similar ao logo */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none; /* Remove sublinhado padrão de links */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-weight: 700;
+  transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.btn-saiba-mais:hover {
+  background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
 }
