@@ -2,44 +2,154 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Contato</title>
-    <link href="estilos.css">
-<style>
-    
-        h1{
-            color: #59738B;
-            text-align: center;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
-        h3{
-            color: #308A66;
-        }
-        section{
-            background-color: #EEEEEE;
-            border: solid #59738B 3px;
-            border-radius: 10px;
-            padding: 30px 20px;
-            max-width: 600px;
-            margin: 0 auto 40px auto;
-            
-        }
-</style>
 
+        h1, h2 {
+            color: #308A66;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px 10px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .radio-group {
+            margin-top: 10px;
+        }
+
+        .radio-group input {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #308A66;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #308A66;
+        }
+
+        a {
+            color: #308A66;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Contato</h1>
+    <div class="container">
+        <p class="intro">
+            Aqui você encontra várias formas para falar conosco. Escolha o método que preferir: canais diretos ou envie uma mensagem pelo
+            formulário abaixo. Estamos prontos para ajudar você com dúvidas, orçamentos ou sugestões.
+        </p>
 
-<h1>Contato</h1>
+        <section>
+            <h2>Contatos Diretos</h2>
+            <p>Telefone: <a href="tel:77999343344">77 99934-3344</a></p>
+            <p>WhatsApp: <a href="https://wa.me/77999343344" target="_blank" rel="noopener noreferrer">77 99934-3344</a></p>
+            <p>Instagram: <a href="https://instagram.com/pe_valdevite" target="_blank" rel="noopener noreferrer">@pe_valdevite</a></p>
+            <p>Email: <a href="mailto:admilson@gmail.com">admilson@gmail.com</a></p>
+        </section>
 
-<section>
-    <h3>Formas diretas de solicitar nossos serviços:</h3>
-    <p>Telefone: <a href="tel:77999343344">77999343344</a></p>
-    <p>Whatsapp: <a href="https://wa.me/77999343344" target="_blank">77 999343344</a></p>
-    <p>Instagram: <a href="https://instagram.com/pe_valdevite">pe_valdevite</a></p>
-    <p>Email: <a href="mailto:admilson@gmail.com">admilson@gmail.com</a></p>
-</section>
+        <section>
+            <h2>Envie sua mensagem</h2>
+            <form>
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite seu nome" />
 
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" pattern="\d{10,11}" placeholder="Somente números" />
+
+                <label for="servico">Serviço *</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="informacao">Informação</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label>Preferência de contato *</label>
+                <div class="radio-group">
+                    <input type="radio" id="contato_whatsapp" name="preferencia_contato" value="whatsapp" required />
+                    <label for="contato_whatsapp" style="display:inline;">WhatsApp</label>
+                    <input type="radio" id="contato_email" name="preferencia_contato" value="email" />
+                    <label for="contato_email" style="display:inline;">E-mail</label>
+                </div>
+
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </div>
 </body>
-
 
 </html>
