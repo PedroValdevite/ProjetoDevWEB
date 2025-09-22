@@ -31,11 +31,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px; /* Adicionado padding para dar espaço */
+    padding: 10px 40px; 
 }
 
-.logo img {
-    height: 20vh;
+.logo{
+    height: 10vh;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
 }
 
 .slogan-area span {
@@ -48,8 +53,8 @@ footer {
     color: #333;
 }
 
-/* Estilos para o menu de navegação */
 nav ul {
+
     display: flex; 
     justify-content: center; /* Centraliza o menu */
     list-style: none;
@@ -60,10 +65,10 @@ nav ul li a {
     background: linear-gradient(to right, #59738B, #308A66);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Mantém a cor transparente para o gradiente funcionar */
+    color: transparent;
     font-size: 25px;
     font-weight: bold;
-    padding: 10px 20px; /* Adicione padding para dar um "respiro" aos links */
+    padding: 10px 20px;
     text-decoration: none;
 }
 
@@ -73,9 +78,11 @@ nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    font-size: 27px;
 }
 
-.banner-section{
+.bannermain{
+    margin-top: 15px;
     background: linear-gradient(to right, #59738B, #F8F6F8);
     display: flex;
     justify-content: space-around;
@@ -120,4 +127,91 @@ nav ul li a:hover {
 
 .btn-saiba-mais:hover {
   background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
+}
+
+.section-main{
+    margin-top: 1vw;
+    background: #EEEEEE;
+    height: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+.sectiondiv{
+    background-color: #F8F6F8;
+    width: 30vw;
+    max-width: 800px;
+    min-width: 300px;
+    height: 40vw;
+    max-height: 1000px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionfoto{
+    border: 1px outset rgb(130, 235, 120); 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 500px; 
+    margin-top: 10px;
+}
+
+.section-text{
+    margin-top: 10px;
+    display: block; 
+    height: 30%; 
+    width: 90%;
+    font-size: 1vw;
+}
+
+.footer {
+  background: #34495e;   
+  color: #ecf0f1;       
+  padding: 30px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #1abc9c; /* muda cor no hover */
+}
+
+.social a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
 }
