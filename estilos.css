@@ -215,3 +215,51 @@ nav ul li a:hover {
   margin-right: 10px;
   font-size: 20px;
 }
+
+/*CSS Aba  GALERIA*/
+
+.container{
+  background-color: #34495e;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pai {
+  width: 35vw;
+  height: 25vw;
+  margin: 1vw auto 1vw 4vw;
+  background-color: #59738B;
+  color: white;
+  text-align: center;
+  position: relative; /* garante que a filha posicione relativa ao pai */
+}
+
+.filha {
+  display: none;
+  background-color: #bec8d2;
+  color: white;
+  position: absolute;
+  top:0;
+  left: 100%;         
+}
+
+.pai:hover .filha {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 5vw); /* cria colunas automáticas de 5vw */
+  grid-auto-columns: 1vw;                           /* altura das linhas */
+  gap: 1vw;                                      /* espaçamento entre fotos */
+  width: 50vw;
+  height: 25vw;
+
+}
+
+.fotos{
+  height: 5vw;
+  width: 5vw;
+  background-color: white;
+  margin: 1vw;
+}
+
