@@ -215,3 +215,83 @@ nav ul li a:hover {
   margin-right: 10px;
   font-size: 20px;
 }
+
+/*CSS tela de serviços*/
+
+.container-sessao-servicos{
+  height: 50vw;
+  width: 100%;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 5vw;
+}
+
+.sessaoservicos-left{
+  text-decoration: none;
+  color: inherit;       
+  display: block;
+  align-self: flex-start;
+  margin: 1em;
+  background-color: #34495E;  
+  height: 25%;
+  width: 60%;
+  min-width: 200px;
+  border-radius: 20px;
+  border: 10px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.sessaoservicos-left:hover{
+  align-self: flex-start;
+  margin: 1em;
+  background-color: #34495E;  
+  height: 25%;
+  width: 60%;
+  min-width: 200px;
+  border-radius: 20px;
+  border: #308A66 10px solid;
+}
+
+.sessaoservicos-rigth{
+  text-decoration: none;
+  color: inherit;       
+  display: block;
+  align-self: flex-end;
+  margin: 1em;
+  background-color: #34495E;  
+  height: 25%;
+  width: 60%;
+  border-radius: 10px;
+  border: 10px solid transparent;
+  transition: border-color 0.3s ease;
+  
+}
+
+.sessaoservicos-rigth:hover{
+  align-self: flex-end;
+  margin: 1em;
+  background-color: #34495E;  
+  height: 25%;
+  width: 60%;
+  border-radius: 10px;
+  border: #308A66 10px solid; 
+}
+
+.opcoes{
+  position: relative; 
+  color:white;
+  padding: 2vw 1vw 1vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  height: 100%;
+  width: 100%;
+}
+
+.img-opcoes{
+  position: absolute;
+  width: 15%;
+  align-self: self-end;
+  justify-self: start;
+}
