@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
 
     <style>
-        ol {
+        .estilo_ol {
             margin-left: 30px;
             display: flex;
             justify-content: flex-start;
@@ -16,25 +16,25 @@
             padding: 1vw;
         }
 
-        p {
+        .estilo_p {
             color: black;
             margin: 10px;
-            font-size: 1.5vw;
-            
+            font-size: 1.2vw;
         }
 
-        img {
+        .estilo_img_container {
             width: 30vw;
-            
             margin: 10px;
         }
-        li{
-            color:#308A66;
-            font-size: 3vw;
-            align-self: flex-start;
+
+        .estilo_titulo_dica {
+            color: #308A66;
+            font-size: 2.2vw;
+            margin-top: 0;
         }
-        .background-colorli{
-            background-color: #34495e;
+
+        .background-card {
+            background-color: #f9f9f9;
         }
     </style>
 </head>
@@ -63,83 +63,87 @@
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
-
-        <div style="margin-bottom: 60px;">
-            <h1 style="text-align: center; color: #34495e; margin-top: 50px; margin-bottom: 30px;">Dicas que você vai
-                curtir:</h1>
-            <ol style="text-indent: 0px;">
-                <li>Tenha em casa um kit básico de ferramentas:
-                    <img src="imagens_blog/ferrammentas_blog.webp" alt="ferramentas">
-                    <p>Essa é a primeira entre as dicas de manutenção
-                        residencial porque, para realizar qualquer
-                        manutenção em sua casa, você precisará de
-                        alguma ferramenta, e o tipo vai depender do
-                        reparo a ser feito. Por isso, é importante que
-                        você tenha pelo menos um kit básico de ferramentas,
-                        com algumas essenciais e que provavelmente darão
-                        conta dos reparos a serem feitos por você em sua casa.
-                        Então, entre essas dicas de manutenção residencial,
-                        indicamos que você tenha, para montar um kit básico,
-                        um martelo, um alicate universal, um estilete,
-                        pelo menos dois tamanhos de chaves de fenda
-                        e dois tamanhos de chaves philips e uma chave teste.
-                        Com esses itens, você poderá fazer diversos
-                        reparos de manutenção residencial.</p>
-                </li>
-                <br><br>
-                <li>Tenha cuidado redobrado com estruturas hidráulicas e elétricas
-                    <img src="imagens_blog/hid_ele_blog.jpg" alt="hidraulica e eletrica">
-                    <p>É claro que entre as dicas de manutenção residencial não poderia faltar o cuidado com canos e
-                        fios. Você certamente não quer passar pela experiência de furar um cano ou atingir uma parte da
-                        estrutura elétrica da casa, pois é dor de cabeça na certa.
-
-                        Por isso, sempre que for fazer furos, observe se o local a ser furado não pode ser trajeto de
-                        canos e fiações. Veja se há interruptores ou tomadas na linha do local a ser furado, e não faça
-                        furos na direção de válvulas de descarga, abaixo da pia ou do chuveiro, a menos que você tenha
-                        um desenho dos caminhos dos canos e das fiações.
-
-                        Além disso, entre essas dicas de manutenção residencial, precisamos lembrar que, quando for
-                        mexer em tomadas, interruptores ou qualquer outro equipamento que funcione com energia elétrica,
-                        desligue a rede daquele ponto. E quando for mexer em torneiras, descargas ou equipamentos de
-                        água, feche o registro correspondente.</p>
-                </li>
-                <br><br>
-                <li>Utilize materiais de boa qualidade
-                    <img src="imagens_blog/materiais_blog.jpg" alt="materiais">
-                    <p>É possível que essas dicas de manutenção residencial te ajudem a economizar algum dinheiro, já
-                        que você provavelmente vai realizar reparos por conta própria. Porém, tome cuidado quando for
-                        comprar equipamentos e peças para utilizar nesses reparos.
-
-                        Compre sempre materiais de boa qualidade, que vão durar mais tempo e garantir a segurança da sua
-                        casa. E se precisar substituir peças, procure as originais.</p>
-                </li>
-                <br><br>
-                <li>Não esqueça as calhas, a caixa d’água e a caixa de gordura
-                    <img src="imagens_blog/caixa_calha_blog.jpg" alt="limpeza de caixa">
-                    <p>Estamos tão acostumados à nossa casa que, muitas vezes, até esquecemos que algumas partes dela
-                        existem, não é mesmo? Por isso, entre essas dicas de manutenção residencial, não poderia faltar
-                        este lembrete: limpe calhas, caixa d’água e caixa de gordura com a frequência indicada, para que
-                        não fiquem entupidas ou sujas demais.
-
-                        A calha, especialmente no outono e na primavera, pode ficar cheia de folhas e flores, entupindo
-                        as saídas e transbordando pelas laterais, provocando goteiras. A caixa d’água deve ser limpa a
-                        cada 6 meses, com água sanitária diluída em água corrente. E a caixa de gordura também deve ser
-                        limpa nesse mesmo período, para evitar mau cheiro e entupimento de canos.</p>
-                </li>
-            </ol>
-        </div>
-
     </header>
+
+    <main>
+        <div class="estilo_ol" style="max-width: 900px; margin: auto; font-family: sans-serif;">
+
+            <h1 style="text-align: center; color: #34495e; margin-top: 50px; margin-bottom: 50px;">Dicas que você vai
+                curtir:</h1>
+
+            <div class="background-card"
+                style="display: flex; align-items: center; margin-bottom: 40px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <div class="estilo_img_container" style="flex: 1; margin-right: 20px;">
+                    <img src="imagens_blog/ferrammentas_blog.webp" alt="ferramentas"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+                <div style="flex: 2;">
+                    <h2 class="estilo_titulo_dica">Tenha um kit básico de ferramentas</h2>
+                    <p class="estilo_p" style="text-align: justify; line-height: 1.6;">
+                        Para realizar qualquer manutenção em sua casa, você precisará de alguma ferramenta. Por isso, é
+                        importante que você tenha pelo menos um kit básico, com itens essenciais como martelo, alicate,
+                        estilete, chaves de fenda e philips, e uma chave teste. Com esse kit, você poderá fazer diversos
+                        pequenos reparos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="background-card"
+                style="display: flex; align-items: center; margin-bottom: 40px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <div style="flex: 2;">
+                    <h2 class="estilo_titulo_dica">Cuidado com estruturas hidráulicas e elétricas</h2>
+                    <p class="estilo_p" style="text-align: justify; line-height: 1.6;">
+                        Você certamente não quer a dor de cabeça de furar um cano ou atingir um fio. Sempre verifique o
+                        trajeto de canos e fiações antes de furar paredes. Desligue a energia ao mexer em tomadas e
+                        feche o registro de água para reparos hidráulicos. Segurança em primeiro lugar!
+                    </p>
+                </div>
+                <div class="estilo_img_container" style="flex: 1; margin-left: 20px;">
+                    <img src="imagens_blog/hid_ele_blog.jpg" alt="hidraulica e eletrica"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+
+            <div class="background-card"
+                style="display: flex; align-items: center; margin-bottom: 40px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <div class="estilo_img_container" style="flex: 1; margin-right: 20px;">
+                    <img src="imagens_blog/materiais_blog.jpg" alt="materiais" style="width: 100%; border-radius: 8px;">
+                </div>
+                <div style="flex: 2;">
+                    <h2 class="estilo_titulo_dica">Utilize materiais de boa qualidade</h2>
+                    <p class="estilo_p" style="text-align: justify; line-height: 1.6;">
+                        Fazer reparos por conta própria pode economizar dinheiro, mas não economize na qualidade do
+                        material. Compre sempre peças e equipamentos de boa qualidade, que vão durar mais tempo e
+                        garantir a segurança da sua casa. Se precisar substituir peças, procure as originais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="background-card"
+                style="display: flex; align-items: center; margin-bottom: 40px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <div style="flex: 2;">
+                    <h2 class="estilo_titulo_dica">Não esqueça calhas e caixas d'água</h2>
+                    <p class="estilo_p" style="text-align: justify; line-height: 1.6;">
+                        Lembre-se de limpar calhas, caixa d’água e caixa de gordura com a frequência indicada. A calha
+                        entupida pode causar goteiras e infiltrações. A limpeza periódica da caixa d’água e da caixa de
+                        gordura evita problemas de saúde, mau cheiro e entupimentos.
+                    </p>
+                </div>
+                <div class="estilo_img_container" style="flex: 1; margin-left: 20px;">
+                    <img src="imagens_blog/caixa_calha_blog.jpg" alt="limpeza de caixa"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+
+        </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
-
             <div class="footer-col">
                 <h3>Convênio do Lar</h3>
                 <p>© 2025 Todos os direitos reservados.</p>
             </div>
-
-
             <div class="footer-col">
                 <h4>Links úteis</h4>
                 <ul>
@@ -149,7 +153,6 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h4>Redes sociais</h4>
                 <div class="social">
@@ -162,6 +165,5 @@
     </footer>
 
 </body>
-
 
 </html>
