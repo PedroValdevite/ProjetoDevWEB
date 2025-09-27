@@ -216,7 +216,9 @@ nav ul li a:hover {
   font-size: 20px;
 }
 
-/*CSS tela de serviços*/
+
+
+/*-----------------------CSS tela de serviços-----------------------*/
 
 .container-sessao-servicos{
   height: 50vw;
@@ -291,7 +293,58 @@ nav ul li a:hover {
 
 .img-opcoes{
   position: absolute;
-  width: 15%;
+  width: 30%;
   align-self: self-end;
-  justify-self: start;
+  margin-top: -3vw;
 }
+
+/*CSS Aba  GALERIA*/
+
+.container{
+  background-color: #34495e;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pai {
+  width: 35vw;
+  height: 30vw;
+  margin: 1vw auto 1vw 4vw;
+  background-color: #59738B;
+  color: white;
+  text-align: center;
+  position: relative; /* garante que a filha posicione relativa ao pai */
+}
+
+.filha {
+  display: none;
+  background-color: #bec8d2;
+  color: white;
+  position: absolute;
+  top:0;
+  left: 100%;         
+}
+
+.pai:hover .filha {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 11vw); /* cria colunas automáticas de 5vw */
+  grid-auto-columns: 3vw;                           /* altura das linhas */
+  gap: 1vw;                                      /* espaçamento entre fotos */
+  width: 50vw;
+  height: 30vw;
+
+}
+
+.fotos{
+  height: 11vw;
+  width: 11vw;
+  background-color: white;
+  margin: 1vw;
+  border: 1px black solid;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+}
+
