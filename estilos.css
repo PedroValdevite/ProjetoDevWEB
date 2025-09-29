@@ -348,3 +348,6 @@ nav ul li a:hover {
   border-radius: 10%;
 }
 
+.social + p{
+  color:red
+}
